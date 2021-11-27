@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+    html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Space Mono', monospace;
+        background-color: hsl(185, 41%, 84%);
+    }
+    .logo {
+        display: block;
+        margin: 50px auto 50px auto;
+        width: 100px;
+    }
+    .panel-main {
+        margin: 0 auto 10px auto;
+        background-color: hsl(0, 0%, 100%);
+        padding: 35px;
+        border-radius: 15px;
+        width: 850px;
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .title {
+        color: hsl(185, 41%, 84%);
+    }
+    .btn-Tip {
+        color: hsl(0, 0%, 100%);
+        cursor: pointer;
+        font-size: 24px;
+        font-family: 'Space Mono', monospace;
+        font-weight: 700;
+        background-color: hsl(183, 100%, 15%);
+        text-align: center;
+        width: 130px;
+        padding: 7px 0;
+        border: none;
+        border-radius: 5px;
+        transition: .1s;
+    }
+    .btn-Tip:hover {
+        color:hsl(183, 100%, 15%);
+        background-color: hsl(172, 67%, 45%);
+    }
+    .btn-Tip:active {
+        color: hsla(0, 0%, 100%, 0.644);
+        background-color: hsl(183, 100%, 15%);
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    .calculator {
+        width: 50%;
+    }
+    .cal-title {
+        color:hsl(186, 14%, 43%);
+        font-weight: 700;
+    }
+    .input-bill , .input-people {
+        color: hsl(183, 100%, 15%);
+        font-size: 17px;
+        font-family: 'Space Mono', monospace;
+        font-weight: 700;
+        text-align: right;
+        width: 386px;
+        padding: 10px 10px;
+        padding-left: 30px;
+        background-color: hsl(189, 41%, 97%);
+        border-radius: 5px;
+        border: 2px solid transparent;
+        transition: .1s;
+    }
+    .input-bill:focus , .input-people:focus {
+        outline: none;
+        border: 2px solid hsl(172, 67%, 45%);
+    }
+    .inputCheck {
+        border-color: red;
+    }
+    .inputCheck:focus {
+        border-color: red;
+    }
+    .peopleCheck {
+        color: red;
+        opacity: 1;
+        transition: .1s;
+    }
+    .persontitle {
+        display: flex;
+        justify-content: space-between;
+    }
+    .input-tip {
+        color: hsl(183, 100%, 15%);
+        font-size: 20px;
+        font-family: 'Space Mono', monospace;
+        font-weight: 700;
+        text-align: right;
+        width: 128px;
+        padding: 7px 0;
+        background-color: hsl(189, 41%, 97%);
+        border-radius: 5px;
+        border: 2px solid transparent;
+    }
+    .input-tip:focus {
+        outline: none;
+        border: 2px solid hsl(172, 67%, 45%);
+    }
+    .tip-choice {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+    .icon {
+        position: absolute;
+        margin-top: -33px;
+        margin-left: 10px;
+    }
+    .display {
+        background-color:hsl(183, 100%, 15%);
+        border-radius: 15px;
+        padding: 40px;
+        width: 35%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    .title-dp {
+        color: hsl(0, 0%, 100%);
+        font-weight: 700;
+    }
+    .subtitle-dp {
+        color: hsl(184, 14%, 56%);
+        font-size: 13px;
+        font-weight: 700;
+        margin-top: -17px;
+    }
+    .amount {
+        color: hsl(172, 67%, 45%);
+        font-size: 40px;
+        font-weight: 700;
+        margin-top: 5px;
+    }
+    .amount::before {
+        content: "$";
+    }
+    .tip-amount {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .total-amount {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .reset {
+        color: hsl(183, 100%, 15%);
+        font-size: 17px;
+        font-family: 'Space Mono', monospace;
+        font-weight: 700;
+        background-color: hsl(172, 67%, 45%);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 10px 0;
+        width: 100%;
+    }
+    .reset:hover {
+        background-color: hsl(172, 100%, 84%);
+    }
+    .disabled {
+        color: hsl(183, 27%, 43%);
+        background-color: hsl(173, 33%, 66%);
+        cursor: not-allowed;
+    }
+    .disabled:hover {
+        color: hsl(183, 27%, 43%);
+        background-color: hsl(173, 33%, 66%);
+        cursor: not-allowed;
+    }
+
+@media (max-width: 375px) {
+    html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Space Mono', monospace;
+        background-color: hsl(185, 41%, 84%);
+    }
+    .panel-main {
+        margin: auto;
+        background-color: hsl(0, 0%, 100%);
+        width: calc(100% - 20px);
+        height: 800px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .input-bill , .input-people {
+        color: hsl(183, 100%, 15%);
+        font-size: 17px;
+        font-family: 'Space Mono', monospace;
+        font-weight: 700;
+        text-align: right;
+        width: 75%;
+        padding: 10px 10px;
+        padding-left: 30px;
+        background-color: hsl(189, 41%, 97%);
+        border-radius: 5px;
+        border: 2px solid transparent;
+        transition: .1s;
+    }
+    .calculator {
+        width: 100%;
+    }
+    .display {
+        background-color:hsl(183, 100%, 15%);
+        border-radius: 15px;
+        padding: 40px;
+        width: 65%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    .tip-choice {
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+        row-gap: 10px;
+    }
+    .icon {
+        position: absolute;
+        margin-top: 15px;
+        margin-left: -295px;
+    }
+}
